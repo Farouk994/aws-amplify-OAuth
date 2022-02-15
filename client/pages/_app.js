@@ -4,16 +4,23 @@ import Link from "next/link";
 function MyApp({ Component, pageProps }) {
    return (
       <div>
-         <nav>
+         <nav className="py-4 px-12 flex border-b border-gray-300">
             <Link href="/">
-               <a>Home</a>
+               <a className="text-base leading-6 font-medium hover:text-gray-600 transition-colors duration-200 py-2">
+                  Home
+               </a>
             </Link>
             <Link href="/profile">
-               <a>Profile</a>
+               <a className="text-base leading-6 font-medium hover:text-gray-600 transition-colors duration-200 py-2 ml-10">
+                  Profile
+               </a>
             </Link>
-            <Link href="/dashboard">
-               <a>Dashboard</a>
-            </Link>
+
+            {/* <Link href="/dashboard">
+               <a className="text-base leading-6 font-medium hover:text-gray-600 transition-colors duration-200 py-2">
+                  Dashboard
+               </a>
+            </Link> */}
          </nav>
          <Component {...pageProps} />
       </div>
