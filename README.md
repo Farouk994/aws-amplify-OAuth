@@ -1,1 +1,1 @@
-# aws-typescript
+# aws-amplify-OAuth
